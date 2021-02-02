@@ -1,0 +1,8 @@
+.regimg{
+    background-image: url('ck1.jpeg');
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    font-family: sans-serif;
+    margin-top: 0px;
+}

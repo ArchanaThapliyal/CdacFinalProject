@@ -1,0 +1,33 @@
+<div class="container" style="max-width: 500px; ">
+    <h1>Update Cake Details</h1>
+    <form #editUserform="ngForm" (ngSubmit)="updateproductformsubmit()">
+      <div class="form-group">
+        <label for="id">Product Id</label>
+        <input type="number" class="form-control"placeholder="Enter product_id" required [(ngModel)]="product.cakeId" name="cakeId" >
+      </div>
+      <div class="form-group">
+        <label for="flavour">Cake Flavour</label>
+        <input type="text" class="form-control" placeholder="Enter flavour" required [(ngModel)]="product.flavour" name="flavour" >
+      </div>
+      <div class="form-group">
+        <label for="shape">Shape</label>
+        <input type="text" class="form-control" placeholder="Enter Shape" required [(ngModel)]="product.shape" name="shape" >
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight</label>
+        <input type="text" class="form-control" placeholder="Enter Size" required [(ngModel)]="product.size" name="size" >
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" placeholder="Enter Price" required [(ngModel)]="product.price" name="price" >
+      </div>
+      <div class="form-group">
+        <label for="noofcakes">No Of Cakes</label>
+        <input type="number" class="form-control" placeholder="Enter No Of cakes" required [(ngModel)]="product.noOfCakes" name="noOfCakes" >
+      </div>
+      <button  type="submit" class="btn btn-info">Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;
+      <button  type="submit" class="btn btn-info" (click)="gotolist()" >Back</button> 
+      <br>
+  <br>
+ 
+      </form></div>

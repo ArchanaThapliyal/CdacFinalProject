@@ -1,0 +1,32 @@
+<div class="container" style="max-width: 500px; ">
+<form #addUserform="ngForm" (ngSubmit)="addproduct()">
+  <div class="form-group">
+    <label for="id">Product Id</label>
+    <input type="number" class="form-control" required [(ngModel)]="product.cakeId" placeholder="Enter product_id" name="cakeId" >
+  </div>
+  <div class="form-group">
+    <label for="flavour">Cake Flavour</label>
+    <input type="text" class="form-control" required [(ngModel)]="product.flavour"placeholder="Enter flavour" name="flavour" >
+  </div>
+  <div class="form-group">
+    <label for="shape">Shape</label>
+    <input type="text" class="form-control" required [(ngModel)]="product.shape"placeholder="Enter Shape" name="shape" >
+  </div>
+  <div class="form-group">
+    <label for="weight">Weight</label>
+    <input type="text" class="form-control" required [(ngModel)]="product.size"placeholder="Enter Size" name="size" >
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="number" class="form-control" required [(ngModel)]="product.price"placeholder="Enter Price" name="price" >
+  </div>
+  <div class="form-group">
+    <label for="noofcakes">No Of Cakes</label>
+    <input type="number" class="form-control" required [(ngModel)]="product.noOfCakes" placeholder="Enter No Of cakes" name="noOfCakes" >
+  </div>
+  <button [disabled]="addUserform.form.invalid" type="submit" class="btn btn-info">Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button  type="submit" class="btn btn-info" (click)="gotolist()" >Back</button> 
+  <br>
+  <br>
+  
+  </form></div>

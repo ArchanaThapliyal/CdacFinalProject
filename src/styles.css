@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+.navbar
+{
+    background-color: mediumturquoise;
+    font-size: large;
+}
+.navbar-light .navbar-nav .navbar-link
+{
+    color:black;
+    font-size: 25px;
+}
+.navbar-light .navbar-nav .navbar-link:hover
+{
+    text-decoration:underline;
+}

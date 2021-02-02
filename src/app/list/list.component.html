@@ -1,0 +1,36 @@
+<div class="container">
+  <br>
+  <br>
+    <h1>Product In Stock </h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Cake Id</th>
+          <th>Cake Flavour</th>
+          <th>Shape</th>
+          <th>Weight</th>
+          <th>Price</th>
+          <th>No Of Cakes</th>
+          <th>Action</th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of _productlist">
+          <td>{{product.cakeId}}</td>
+          <td>{{product.flavour}}</td>
+          <td>{{product.shape}}</td>
+          <td>{{product.size}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.noOfCakes}}</td>
+  
+        <td><button type="button" class="btn btn-success" (click)="gotoeditcake(product.cakeId)">Update Cake Details</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-danger" (click)="deletecake(product.cakeId)">Delete Cake</button>
+        </td>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" (click)="gotoaddcake()">Add New Cake</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+    <br>
+    <br>
+</div>
